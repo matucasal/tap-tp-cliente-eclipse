@@ -14,13 +14,14 @@ import javax.swing.DefaultListModel;
  */
 public class Interfaz extends javax.swing.JFrame {
 
-	ProxyManager pm = new ProxyManager();
-    
     /**
      * Creates new form Interfaz
      */
+	ProxyManager pm = new ProxyManager();
+	
     public Interfaz() {
         initComponents();
+        
         
         setTitle("Videoclub");
     }
@@ -34,78 +35,63 @@ public class Interfaz extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        obtenerPelículaPorTítuloPanel = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        obtenerPeliculaPorTituloTitulo = new javax.swing.JTextField();
-        obtenerPelículaPorTítuloObtener = new javax.swing.JButton();
-        obtenerPeliculaPorTituloResultado = new javax.swing.JLabel();
+        pestanas = new javax.swing.JTabbedPane();
         obtenerUsuarioPorNombrePanel = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         obtenerUsuarioPorNombreNombre = new javax.swing.JTextField();
         obtenerUsuarioPorNombreObtener = new javax.swing.JButton();
         obtenerUsuarioPorNombreResultado = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        obtenerPelículaPorTítuloPanel = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        obtenerPeliculaPorTituloTitulo = new javax.swing.JTextField();
+        obtenerPelículaPorTítuloObtener = new javax.swing.JButton();
+        obtenerPeliculaPorTituloResultado = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
         listarPeliculas = new javax.swing.JRadioButton();
         listarUsuarios = new javax.swing.JRadioButton();
         listarPrestamos = new javax.swing.JRadioButton();
         listarListar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
+        jLabel9 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        crearPrestamoUsuario = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        crearPrestamoTitulo = new javax.swing.JTextField();
+        crearPrestamoCrear = new javax.swing.JButton();
+        crearPrestamoResultado = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        crearPeliculaTitulo = new javax.swing.JTextField();
+        crearPeliculaCrear = new javax.swing.JButton();
+        crearPeliculaResultado = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        crearUsuarioNombre = new javax.swing.JTextField();
+        crearUsuarioCrear = new javax.swing.JButton();
+        crearUsuarioResultado = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        eliminarID = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        eliminarPelicula = new javax.swing.JRadioButton();
+        eliminarUsuario = new javax.swing.JRadioButton();
+        eliminarPrestamo = new javax.swing.JRadioButton();
+        eliminarEliminar = new javax.swing.JButton();
+        eliminarResultado = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        obtenerPelículaPorTítuloPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        pestanas.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
 
-        jLabel1.setText("Obtener película por título:");
-
-        obtenerPeliculaPorTituloTitulo.setText("Título de la película");
-
-        obtenerPelículaPorTítuloObtener.setText("Obtener");
-        obtenerPelículaPorTítuloObtener.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                obtenerPelículaPorTítuloObtenerActionPerformed(evt);
-            }
-        });
-
-        obtenerPeliculaPorTituloResultado.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-
-        javax.swing.GroupLayout obtenerPelículaPorTítuloPanelLayout = new javax.swing.GroupLayout(obtenerPelículaPorTítuloPanel);
-        obtenerPelículaPorTítuloPanel.setLayout(obtenerPelículaPorTítuloPanelLayout);
-        obtenerPelículaPorTítuloPanelLayout.setHorizontalGroup(
-            obtenerPelículaPorTítuloPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(obtenerPelículaPorTítuloPanelLayout.createSequentialGroup()
-                .addGroup(obtenerPelículaPorTítuloPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(obtenerPelículaPorTítuloPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1)
-                        .addGap(22, 22, 22)
-                        .addComponent(obtenerPeliculaPorTituloTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(obtenerPelículaPorTítuloObtener))
-                    .addGroup(obtenerPelículaPorTítuloPanelLayout.createSequentialGroup()
-                        .addGap(84, 84, 84)
-                        .addComponent(obtenerPeliculaPorTituloResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(18, Short.MAX_VALUE))
-        );
-        obtenerPelículaPorTítuloPanelLayout.setVerticalGroup(
-            obtenerPelículaPorTítuloPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(obtenerPelículaPorTítuloPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(obtenerPelículaPorTítuloPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(obtenerPeliculaPorTituloTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(obtenerPelículaPorTítuloObtener))
-                .addGap(29, 29, 29)
-                .addComponent(obtenerPeliculaPorTituloResultado, javax.swing.GroupLayout.DEFAULT_SIZE, 20, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        obtenerUsuarioPorNombrePanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel2.setText("Obtener usuario por nombre:");
-
-        obtenerUsuarioPorNombreNombre.setText("Nombre del usuario");
+        jLabel2.setText("Nombre del usuario:");
 
         obtenerUsuarioPorNombreObtener.setText("Obtener");
         obtenerUsuarioPorNombreObtener.addActionListener(new java.awt.event.ActionListener() {
@@ -116,40 +102,108 @@ public class Interfaz extends javax.swing.JFrame {
 
         obtenerUsuarioPorNombreResultado.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel7.setText("Obtener usuario por nombre");
+
         javax.swing.GroupLayout obtenerUsuarioPorNombrePanelLayout = new javax.swing.GroupLayout(obtenerUsuarioPorNombrePanel);
         obtenerUsuarioPorNombrePanel.setLayout(obtenerUsuarioPorNombrePanelLayout);
         obtenerUsuarioPorNombrePanelLayout.setHorizontalGroup(
             obtenerUsuarioPorNombrePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(obtenerUsuarioPorNombrePanelLayout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(obtenerUsuarioPorNombrePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(obtenerUsuarioPorNombrePanelLayout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(obtenerUsuarioPorNombreNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(82, 525, Short.MAX_VALUE)
+                        .addComponent(obtenerUsuarioPorNombreObtener))
                     .addGroup(obtenerUsuarioPorNombrePanelLayout.createSequentialGroup()
-                        .addGap(72, 72, 72)
-                        .addComponent(obtenerUsuarioPorNombreResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(obtenerUsuarioPorNombreObtener)
+                        .addGap(35, 35, 35)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(obtenerUsuarioPorNombreNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(obtenerUsuarioPorNombrePanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel7)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, obtenerUsuarioPorNombrePanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(obtenerUsuarioPorNombreResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 402, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(79, 79, 79))
         );
         obtenerUsuarioPorNombrePanelLayout.setVerticalGroup(
             obtenerUsuarioPorNombrePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(obtenerUsuarioPorNombrePanelLayout.createSequentialGroup()
                 .addContainerGap()
+                .addComponent(jLabel7)
+                .addGap(21, 21, 21)
                 .addGroup(obtenerUsuarioPorNombrePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(obtenerUsuarioPorNombreNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(obtenerUsuarioPorNombreObtener))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(obtenerUsuarioPorNombreResultado, javax.swing.GroupLayout.DEFAULT_SIZE, 20, Short.MAX_VALUE)
-                .addGap(18, 18, 18))
+                    .addComponent(obtenerUsuarioPorNombreNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                .addComponent(obtenerUsuarioPorNombreResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(obtenerUsuarioPorNombreObtener)
+                .addContainerGap())
         );
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        pestanas.addTab("Obtener usuario por nombre", obtenerUsuarioPorNombrePanel);
 
-        jLabel3.setText("Listar");
+        jLabel1.setText("Título de la película:");
+
+        obtenerPelículaPorTítuloObtener.setText("Obtener");
+        obtenerPelículaPorTítuloObtener.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                obtenerPelículaPorTítuloObtenerActionPerformed(evt);
+            }
+        });
+
+        obtenerPeliculaPorTituloResultado.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel8.setText("Obtener película por título");
+
+        javax.swing.GroupLayout obtenerPelículaPorTítuloPanelLayout = new javax.swing.GroupLayout(obtenerPelículaPorTítuloPanel);
+        obtenerPelículaPorTítuloPanel.setLayout(obtenerPelículaPorTítuloPanelLayout);
+        obtenerPelículaPorTítuloPanelLayout.setHorizontalGroup(
+            obtenerPelículaPorTítuloPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(obtenerPelículaPorTítuloPanelLayout.createSequentialGroup()
+                .addGroup(obtenerPelículaPorTítuloPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(obtenerPelículaPorTítuloPanelLayout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(obtenerPeliculaPorTituloTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(obtenerPelículaPorTítuloPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel8)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, obtenerPelículaPorTítuloPanelLayout.createSequentialGroup()
+                .addContainerGap(121, Short.MAX_VALUE)
+                .addGroup(obtenerPelículaPorTítuloPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, obtenerPelículaPorTítuloPanelLayout.createSequentialGroup()
+                        .addComponent(obtenerPelículaPorTítuloObtener)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, obtenerPelículaPorTítuloPanelLayout.createSequentialGroup()
+                        .addComponent(obtenerPeliculaPorTituloResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 413, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(74, 74, 74))))
+        );
+        obtenerPelículaPorTítuloPanelLayout.setVerticalGroup(
+            obtenerPelículaPorTítuloPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, obtenerPelículaPorTítuloPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+                .addGroup(obtenerPelículaPorTítuloPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(obtenerPeliculaPorTituloTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(75, 75, 75)
+                .addComponent(obtenerPeliculaPorTituloResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(obtenerPelículaPorTítuloObtener)
+                .addContainerGap())
+        );
+
+        pestanas.addTab("Obtener película por título", obtenerPelículaPorTítuloPanel);
 
         listarPeliculas.setSelected(true);
         listarPeliculas.setText("películas");
@@ -167,6 +221,9 @@ public class Interfaz extends javax.swing.JFrame {
 
         jScrollPane1.setViewportView(jList1);
 
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel9.setText("Listar");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -174,33 +231,303 @@ public class Interfaz extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 588, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(listarListar))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(18, 18, 18)
-                        .addComponent(listarPeliculas)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(listarUsuarios)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(listarPrestamos)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(listarListar)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel9)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(listarPeliculas)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(listarUsuarios)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(listarPrestamos)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(9, 9, 9)
+                .addComponent(jLabel9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
                     .addComponent(listarPeliculas)
                     .addComponent(listarUsuarios)
-                    .addComponent(listarPrestamos)
-                    .addComponent(listarListar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1)
+                    .addComponent(listarPrestamos))
+                .addGap(8, 8, 8)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                .addComponent(listarListar)
                 .addContainerGap())
         );
+
+        pestanas.addTab("Listar", jPanel1);
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel4.setText("Crear préstamo");
+
+        jLabel5.setText("Nombre del usuario:");
+
+        jLabel6.setText("Título de la película:");
+
+        crearPrestamoCrear.setText("Crear");
+        crearPrestamoCrear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                crearPrestamoCrearActionPerformed(evt);
+            }
+        });
+
+        crearPrestamoResultado.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(44, 44, 44)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jLabel6))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(crearPrestamoResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(crearPrestamoTitulo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
+                                        .addComponent(crearPrestamoUsuario, javax.swing.GroupLayout.Alignment.LEADING)))))
+                        .addGap(0, 154, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(crearPrestamoCrear)))
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(crearPrestamoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(14, 14, 14)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(crearPrestamoTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(45, 45, 45)
+                .addComponent(crearPrestamoResultado)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+                .addComponent(crearPrestamoCrear)
+                .addContainerGap())
+        );
+
+        pestanas.addTab("Crear préstamo", jPanel2);
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel3.setText("Crear película");
+
+        jLabel10.setText("Título de la película:");
+
+        crearPeliculaCrear.setText("Crear");
+        crearPeliculaCrear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                crearPeliculaCrearActionPerformed(evt);
+            }
+        });
+
+        crearPeliculaResultado.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(crearPeliculaCrear))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel3))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGap(47, 47, 47)
+                                .addComponent(jLabel10)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(crearPeliculaTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(0, 167, Short.MAX_VALUE)
+                .addComponent(crearPeliculaResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(155, 155, 155))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(crearPeliculaTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                .addComponent(crearPeliculaResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(crearPeliculaCrear)
+                .addContainerGap())
+        );
+
+        pestanas.addTab("Crear película", jPanel3);
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel11.setText("Crear usuario");
+
+        jLabel12.setText("Nombre del usuario:");
+
+        crearUsuarioCrear.setText("Crear");
+        crearUsuarioCrear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                crearUsuarioCrearActionPerformed(evt);
+            }
+        });
+
+        crearUsuarioResultado.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addComponent(jLabel12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(crearUsuarioNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(crearUsuarioCrear)))
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addGap(0, 160, Short.MAX_VALUE)
+                .addComponent(crearUsuarioResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(140, 140, 140))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel11)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(crearUsuarioNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
+                .addComponent(crearUsuarioResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
+                .addComponent(crearUsuarioCrear)
+                .addContainerGap())
+        );
+
+        pestanas.addTab("Crear usuario", jPanel4);
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel13.setText("Eliminar");
+
+        jLabel14.setText("Id:");
+
+        jLabel15.setText("Tipo de elemento:");
+
+        eliminarPelicula.setText("película");
+
+        eliminarUsuario.setText("usuario");
+
+        eliminarPrestamo.setText("préstamo");
+
+        eliminarEliminar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        eliminarEliminar.setForeground(new java.awt.Color(255, 0, 0));
+        eliminarEliminar.setText("Eliminar");
+        eliminarEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eliminarEliminarActionPerformed(evt);
+            }
+        });
+
+        eliminarResultado.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel13))
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addGap(45, 45, 45)
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel15)
+                                    .addComponent(jLabel14))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel5Layout.createSequentialGroup()
+                                        .addComponent(eliminarPelicula)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(eliminarUsuario)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(eliminarPrestamo))
+                                    .addComponent(eliminarID, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(eliminarEliminar)))
+                .addContainerGap())
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(163, 163, 163)
+                .addComponent(eliminarResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(161, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel13)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(eliminarID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(13, 13, 13)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15)
+                    .addComponent(eliminarPelicula)
+                    .addComponent(eliminarUsuario)
+                    .addComponent(eliminarPrestamo))
+                .addGap(43, 43, 43)
+                .addComponent(eliminarResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addComponent(eliminarEliminar)
+                .addContainerGap())
+        );
+
+        pestanas.addTab("Eliminar", jPanel5);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -208,29 +535,15 @@ public class Interfaz extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(obtenerPelículaPorTítuloPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(20, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(obtenerUsuarioPorNombrePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(28, Short.MAX_VALUE)))
+                .addComponent(pestanas)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(124, Short.MAX_VALUE)
-                .addComponent(obtenerPelículaPorTítuloPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(21, 21, 21)
-                    .addComponent(obtenerUsuarioPorNombrePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(349, Short.MAX_VALUE)))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pestanas, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -244,22 +557,22 @@ public class Interfaz extends javax.swing.JFrame {
 
     private void listarListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listarListarActionPerformed
         DefaultListModel model = new DefaultListModel();
-        
+        jList1.setModel(model);
         if (listarPeliculas.isSelected()) {
             for (Pelicula p : pm.listarPeliculas()) {
-                model.addElement(p);
+                model.addElement(p.getTitulo());
             }
         }
         
         if (listarUsuarios.isSelected()) {
             for (Usuario u : pm.listarUsuarios()) {
-                model.addElement(u);
+                model.addElement(u.getNombre());
             }
         }
         
         if (listarPrestamos.isSelected()) {
             for (Prestamo pr : pm.listarPrestamos()) {
-                model.addElement(pr);
+                model.addElement(pr.getUsuario().getNombre() + " alquilo " + pr.getPelicula().getTitulo());
             }
         }
     }//GEN-LAST:event_listarListarActionPerformed
@@ -269,6 +582,44 @@ public class Interfaz extends javax.swing.JFrame {
         Pelicula p = pm.obtenerPeliculaPorTitulo(titulo);
         obtenerPeliculaPorTituloResultado.setText(p.getTitulo());
     }//GEN-LAST:event_obtenerPelículaPorTítuloObtenerActionPerformed
+
+    private void crearPrestamoCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crearPrestamoCrearActionPerformed
+        String usuario = crearPrestamoUsuario.getText();
+        String pelicula = crearPrestamoTitulo.getText();
+        pm.crearPrestamo(usuario, pelicula);
+        crearPrestamoResultado.setText("Préstamo creado");
+    }//GEN-LAST:event_crearPrestamoCrearActionPerformed
+
+    private void crearPeliculaCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crearPeliculaCrearActionPerformed
+        String titulo = crearPeliculaTitulo.getText();
+        pm.crearPelicula(titulo);
+        crearPeliculaResultado.setText("Película creada");
+    }//GEN-LAST:event_crearPeliculaCrearActionPerformed
+
+    private void crearUsuarioCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crearUsuarioCrearActionPerformed
+        String nombre = crearUsuarioNombre.getText();
+        pm.crearUsuario(nombre);
+        crearUsuarioResultado.setText("Usuario creado");
+    }//GEN-LAST:event_crearUsuarioCrearActionPerformed
+
+    private void eliminarEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarEliminarActionPerformed
+        int id = Integer.parseInt(eliminarID.getText());
+        
+        if (eliminarPelicula.isSelected()) {
+            pm.eliminarPelicula(id);
+            eliminarResultado.setText("Película eliminada");
+        }
+        
+        if (eliminarUsuario.isSelected()) {
+            pm.eliminarUsuario(id);
+            eliminarResultado.setText("Usuario eliminado");
+        }
+        
+        if (eliminarPrestamo.isSelected()) {
+            pm.eliminarPrestamo(id);
+            eliminarResultado.setText("Prestamo eliminado");
+        }
+    }//GEN-LAST:event_eliminarEliminarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -280,9 +631,7 @@ public class Interfaz extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                javax.swing.UIManager.setLookAndFeel(javax.swing.UIManager.getCrossPlatformLookAndFeelClassName());
-            }
+            javax.swing.UIManager.setLookAndFeel(javax.swing.UIManager.getSystemLookAndFeelClassName());
         } catch (ClassNotFoundException ex) {
             java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
@@ -303,11 +652,43 @@ public class Interfaz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton crearPeliculaCrear;
+    private javax.swing.JLabel crearPeliculaResultado;
+    private javax.swing.JTextField crearPeliculaTitulo;
+    private javax.swing.JButton crearPrestamoCrear;
+    private javax.swing.JLabel crearPrestamoResultado;
+    private javax.swing.JTextField crearPrestamoTitulo;
+    private javax.swing.JTextField crearPrestamoUsuario;
+    private javax.swing.JButton crearUsuarioCrear;
+    private javax.swing.JTextField crearUsuarioNombre;
+    private javax.swing.JLabel crearUsuarioResultado;
+    private javax.swing.JButton eliminarEliminar;
+    private javax.swing.JTextField eliminarID;
+    private javax.swing.JRadioButton eliminarPelicula;
+    private javax.swing.JRadioButton eliminarPrestamo;
+    private javax.swing.JLabel eliminarResultado;
+    private javax.swing.JRadioButton eliminarUsuario;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JList<String> jList1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton listarListar;
     private javax.swing.JRadioButton listarPeliculas;
@@ -321,5 +702,6 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JButton obtenerUsuarioPorNombreObtener;
     private javax.swing.JPanel obtenerUsuarioPorNombrePanel;
     private javax.swing.JLabel obtenerUsuarioPorNombreResultado;
+    private javax.swing.JTabbedPane pestanas;
     // End of variables declaration//GEN-END:variables
 }
